@@ -1,0 +1,111 @@
+.navbar_bottom {
+  width: 100%;
+  margin-top: 5.4rem;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  color: #000;
+  background-color: #eee;
+  box-shadow: 3px 4px 3px #555;
+  font-family: myriad-arabic, sans-serif;
+}
+.navbar_bottom > ul {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_bottom ul > li {
+  margin: 10px 20px;
+  transition: 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_bottom ul li > .dropMenu {
+  display: flex;
+  gap: 1rem;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #555;
+  position: absolute;
+  z-index: 999;
+  width: 350px;
+  flex-direction: column;
+  top: 50px;
+  border-radius: 10px;
+}
+.navbar_bottom ul li > .dropMenu p {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar_bottom ul li > .dropMenu p:hover {
+  background-color: #666;
+  width: 100%;
+  color: #fff;
+}
+.menu {
+  position: relative;
+  transition: 0.3s ease;
+}
+.menu_bottom {
+  position: absolute;
+  top: 110%; /* Adjusted to ensure no gap */
+  background-color: #fff;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+  padding: 0 1rem;
+  border-radius: 10px;
+  margin-top: 10px;
+  visibility: hidden;
+  height: 0;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.menu_bottom::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -10px;
+  background-color: #fff;
+}
+.menu:hover .menu_bottom {
+  height: 130px;
+  visibility: visible;
+  opacity: 1;
+}
+.menu_bottom:hover {
+  height: 130px;
+  visibility: visible;
+  opacity: 1;
+}
+.menu_bottom > p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.menu_bottom > p:hover {
+  background-color: #eee;
+}
+@media screen and (max-width: 789px) {
+  .navbar_bottom {
+    display: none;
+  }
+}

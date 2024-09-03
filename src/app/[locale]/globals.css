@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* reused css */
+body {
+  background-color: #eee;
+  direction: rtl;
+  font-family: myriad-arabic, sans-serif;
+}

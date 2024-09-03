@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/[locale]/components/login/Login.jsx", "src/app/[locale]/components/Navbartop/Navbar.tsx", "src/app/[locale]/api/auth/VerificationLogin.api.js", "src/components/Navbarmenu/NavbarMenu.jsx", "src/components/section1/Section1.jsx", "src/components/Section2/Section2.jsx", "src/components/reviwes/Reviwes.jsx", "src/components/Navbartop/Navbar.jsx", "src/components/AddToFav/AddToFav.jsx", "src/components/Section3/Section3.jsx"],
+  "exclude": ["node_modules"]
+}

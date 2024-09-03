@@ -1,0 +1,54 @@
+.model {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: #222;
+}
+.model img {
+  width: 300px;
+  animation: modelImage 2s ease-in-out infinite;
+}
+
+@keyframes modelImage {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+}
+.model p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 1rem;
+  animation: modelTitle 2s ease-in-out infinite;
+}
+@keyframes modelTitle {
+  0% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}

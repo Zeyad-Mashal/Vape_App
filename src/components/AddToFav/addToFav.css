@@ -1,0 +1,129 @@
+.addToFav,
+.fav_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fav_container {
+  margin-top: 6rem;
+}
+.fav_container h2 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.list_fav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.item_item {
+  width: 600px;
+  background-color: #1b5c29;
+  box-shadow: 4px 4px 10px #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  position: relative;
+  z-index: 2;
+}
+.item_item img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0 16px 16px 0;
+}
+.item_item .content_fav {
+  width: 100%;
+  color: #fff;
+  margin: 1rem;
+}
+.item_item .content_fav h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+}
+.content_bottom_fav {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+}
+.content_bottom_fav p {
+  color: #aaa;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.content_bottom_fav svg {
+  font-size: 2rem;
+  color: rgb(216, 0, 0);
+  cursor: pointer;
+  transition: 0.3s ease;
+  animation: fav 2s ease-in-out infinite;
+  z-index: 9999;
+}
+.content_bottom_fav svg:hover {
+  scale: 1.2;
+}
+@keyframes fav {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 789px) {
+  .fav_container {
+    margin-top: 8rem;
+  }
+  .fav_container h2 {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+  }
+  .list_fav {
+    padding: 10px;
+  }
+  .list_fav a {
+    width: 400px;
+  }
+  .item_item {
+    width: 350px;
+  }
+  .item_item img {
+    width: 110px;
+    height: 100px;
+  }
+  .item_item .content_fav {
+    margin: 0.6rem;
+  }
+  .item_item .content_fav h3 {
+    font-size: 1.1rem;
+    top: 10px;
+  }
+  .content_bottom_fav {
+    width: 200px;
+    bottom: 10px;
+  }
+  .content_bottom_fav p {
+    font-size: 0.9rem;
+  }
+  .content_bottom_fav svg {
+    font-size: 1.6rem;
+  }
+}

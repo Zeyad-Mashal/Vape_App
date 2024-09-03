@@ -1,0 +1,46 @@
+{
+    "navbar": {
+        "main": "Home",
+        "nav2": "Our Offers",
+        "nav3" : "Red Tea",
+        "nav4" : "Green Tea",
+        "nav5" : "Flavored tea",
+        "nav6" : "Tea Tools",
+        "nav7": "Savings groups",
+        "nav8": "With Swulif Tea"
+    },
+    "sectionOne": {
+      "title": ""
+    },
+    "sectionTwo": {
+      "title": "Mods & POD KITS"
+    },
+    "sectionThree": {
+      "title": "DISPOSABLE"
+    },
+    "sectionFour": {
+      "title": "Customer Reviews"
+    },
+    "footer": {
+        "title": "Contact us",
+        "links": "Important Links",
+        "transport": "Transport Policy",
+        "usege": "Usage and Privacy Policy",
+        "backup": "Return and exchange policy",
+        "Wholesale": "Wholesale Sales",
+        "email": "Swulif Email",
+        "copyright": "© All rights reserved to Vape App"
+    },
+    "cart": {
+      "title": "Your Products Cart" ,
+      "check": "Check Out Now"
+    },
+    "register": {
+      "title": "Register Page",
+      "btn": "Login"
+    },
+    "login": {
+      "title": "تسجيل دخول",
+      "btn": "تسجيل"
+    }
+  }

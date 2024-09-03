@@ -1,0 +1,620 @@
+/* reused */
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+.navbar_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #006039;
+  box-shadow: 4px 2px 3px #777;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 1.1rem 0;
+}
+.navbar_top > a,
+.logo_icons > a {
+  margin: 0 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.navbar_top .search input {
+  padding: 10px;
+  border-radius: 16px;
+  width: 550px;
+  outline: none;
+  border: 2px solid #999;
+}
+.navbar_top .nav_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.navbar_top .nav_icons svg {
+  font-size: 1.5rem;
+}
+.navbar_top .nav_icons .cart_count {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: -40px -10px 0 0;
+}
+.navbar_top .nav_icons .profile_count {
+  position: absolute;
+  top: -8px;
+  right: 40px;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_info {
+  width: 550px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 0 0 16px 16px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: goldenrod;
+  border-radius: 5px;
+}
+.search_list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  flex-direction: column;
+}
+.search_list > a {
+  width: 100%;
+}
+.search_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.search_item:hover {
+  background-color: #eee;
+}
+.search_content {
+  width: 100%;
+}
+.search_content h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.search_content_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile {
+  flex-direction: column;
+  display: none;
+}
+.logo_icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.mobile .logo_icons img {
+  width: 80px;
+}
+.mobile .logo_icons .nav_icons svg {
+  width: 25px;
+  font-size: 1.5rem;
+}
+.mobile .logo_icons .nav_icons .cart_count,
+.mobile .logo_icons .nav_icons .profile_count {
+  width: 17px;
+  height: 17px;
+}
+.mobile .search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.mobile .search input {
+  width: 95%;
+  padding: 8px;
+}
+.navbar_bottom_mobile {
+  width: 90%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 5555;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #333;
+  box-shadow: -3px -4px 3px #333;
+  font-family: myriad-arabic, sans-serif;
+}
+.navbar_bottom_mobile ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.navbar_bottom_mobile ul li {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  padding: 1rem 10px;
+}
+.navbar_bottom_mobile ul li:last-child {
+  border-bottom: none;
+}
+.navbar_bottom_mobile .close_mobile {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  cursor: pointer;
+  width: 30px;
+  font-size: 1.8rem;
+}
+.translation {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.translation p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.translation_options {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #000;
+  position: absolute;
+  top: 45px;
+  width: 150px;
+  border-radius: 16px;
+  margin: 0 -5rem;
+  transition: 0.3s ease;
+  padding: 1rem 0;
+}
+.translation_options button {
+  width: 100%;
+  transition: 0.3s ease;
+  padding: 10px 0;
+}
+.translation_options button:hover {
+  background-color: goldenrod;
+}
+.mobile .flag_mob img {
+  width: 45px;
+}
+.navbar_bottom_mobile .translation_options {
+  top: 585px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.navbar_bottom_mobile ul li > .dropMenu {
+  display: flex;
+  gap: 0.5rem;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  width: 150px;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.mobile_translation_indecator,
+.translate_indecator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.translate_indecator {
+  gap: 5px;
+}
+.mobile_translation {
+  width: 170px;
+  box-shadow: 4px 4px 10px #999;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  background-color: #fff;
+  color: #000;
+  margin-top: 1rem;
+}
+.mobile_translation button {
+  width: 100%;
+  transition: 0.3s ease;
+  padding: 10px 0;
+}
+.mobile_translation button:hover {
+  background-color: goldenrod;
+  color: #fff;
+}
+.register_logedin {
+  padding: 10px;
+  background-color: green;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.logout_dropmenu {
+  position: absolute;
+  top: 4rem;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  transition: 0.5s ease-in-out;
+}
+.logout_dropmenu button {
+  padding: 7px 10px;
+  background-color: goldenrod;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.logout_dropmenu button:hover {
+  background-color: #000;
+}
+.login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 90vh;
+}
+.login_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  cursor: pointer;
+}
+
+.login_content {
+  width: 400px;
+  max-height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eee;
+  padding: 3rem 1rem 1rem 1rem;
+  box-shadow: 4px 4px 10px #222;
+  position: fixed;
+  top: 20%;
+  z-index: 9999;
+  overflow: auto;
+}
+.login_content .close_login {
+  position: absolute;
+  color: #666;
+  border: none;
+  font-size: 1rem;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.login_content .close_login:hover {
+  color: #000;
+}
+.login_content > svg {
+  color: green;
+  border: 3px solid green;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.login_content > h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.login_content > p {
+  color: #999;
+  font-size: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.login_content > p::before,
+.login_content > p::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #aaa;
+  margin: 0 10px;
+}
+.login_ways {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.login_phone,
+.login_email {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid goldenrod;
+  padding: 1rem;
+  height: 100px;
+  gap: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.login_phone svg,
+.login_email svg {
+  color: #000;
+  font-size: 1.5rem;
+  transition: 0.3s ease-in-out;
+}
+.login_phone:hover,
+.login_email:hover {
+  background-color: goldenrod;
+  color: #fff;
+}
+.login_phone:hover svg,
+.login_email:hover svg {
+  color: #fff;
+}
+.phone_way,
+.email_way,
+.code {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.code {
+  margin-top: 1rem;
+}
+.phone_way > p,
+.email_way > p,
+.code > p {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+}
+.phone_input,
+.email_input,
+.code_input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone_input > span,
+.email_input > span {
+  width: 50px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email_input > span svg {
+  font-size: 1.5rem;
+}
+.phone_input > input,
+.email_input > input,
+.code_input > input {
+  width: 100%;
+  border: 1px solid #aaa;
+  outline: none;
+  direction: ltr;
+  margin: 1rem 0;
+  padding: 5px 10px;
+}
+.phone_way > button,
+.email_way > button,
+.code > button {
+  background-color: goldenrod;
+  padding: 8px;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.phone_way > button:hover,
+.email_way > button:hover,
+.code > button:hover {
+  background-color: rgb(210, 153, 10);
+}
+.menu_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; /* Set the parent container as the reference for absolute positioning */
+}
+.menu_link .menu_btn > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.menu_link .menu_btn > p:hover {
+  color: #aaa;
+}
+.menu_btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_btn > svg {
+  padding: 0 10px;
+  border: 1px solid #aaa;
+  padding: 10px;
+  cursor: pointer;
+}
+.menu_dropdown {
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  transition: height 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.menu_dropdown.show {
+  height: 130px; /* Adjust this height based on your content */
+  visibility: visible;
+  margin-top: 1rem;
+}
+.menu_dropdown ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.menu_dropdown ul li {
+  border-bottom: 1px solid #aaa;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.menu_dropdown ul li:hover {
+  background-color: #1b5c29;
+  color: #fff;
+}
+@media screen and (max-width: 789px) {
+  .mobile {
+    display: block;
+  }
+  .search_info {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 489px) {
+  .search_info {
+    width: 350px;
+    transform: translate(2%, 16%);
+  }
+  .search img {
+    width: 74px;
+  }
+  .search_content h3 {
+    font-size: 0.9rem;
+  }
+
+  .search_content_info {
+    font-size: 0.8rem;
+  }
+  .login_content {
+    width: 350px;
+  }
+
+  .login_content > p::before,
+  .login_content > p::after {
+    width: 60px;
+  }
+}

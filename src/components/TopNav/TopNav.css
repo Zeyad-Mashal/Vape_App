@@ -1,0 +1,15 @@
+.header_top {
+  width: 100%;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.header_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
