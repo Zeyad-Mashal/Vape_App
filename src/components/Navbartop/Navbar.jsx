@@ -386,7 +386,13 @@ const Navbar = () => {
                         }`}
                       >
                         <ul>
-                          <li>home</li>
+                          <li>
+                            <Link
+                              href={`/${lang}/category/66b77eaaa88c44553f9eeafa`}
+                            >
+                              Category
+                            </Link>
+                          </li>
                           <li>home</li>
                           <li>home</li>
                         </ul>

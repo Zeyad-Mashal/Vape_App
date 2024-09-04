@@ -96,7 +96,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 10px;
   flex-direction: column;
 }
 .search_list > a {
@@ -591,13 +590,16 @@
     display: block;
   }
   .search_info {
-    width: 500px;
+    width: 90%;
+    transform: translate(6%, 15%);
+    height: 400px;
   }
 }
 @media screen and (max-width: 489px) {
   .search_info {
-    width: 350px;
-    transform: translate(2%, 16%);
+    width: 350;
+    transform: translate(13%, 20%);
+    height: 300px;
   }
   .search img {
     width: 74px;
