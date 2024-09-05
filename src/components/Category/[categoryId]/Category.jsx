@@ -47,38 +47,52 @@ const Category = () => {
 
       <div className="category">
         <h1>{allProductsByCategory[0]?.category}</h1>
-        <div className="category_list">
-          {loading ? (
-            <p className="category_loading">Vape App...</p>
-          ) : (
-            allProductsByCategory.map((item) => {
-              return (
-                <div className="category_item" key={item._id}>
-                  <Link href={`/${lang}/details/${item._id}`}>
-                    <Image
-                      src={item.images[0]}
-                      width={1000}
-                      height={1000}
-                      alt="category product"
-                    />
-                  </Link>
-                  <div className="category_content">
-                    <span>النكهات سولت نيكوتين</span>
-                    <h3>{item.name}</h3>
-                    <div className="category_content_info">
-                      <p>{item.price} ريال</p>
-                      <button onClick={() => addToCart(item._id)}>
-                        اضف الي السلة
-                      </button>
+        <div className="category_container">
+          <div className="filter_container">
+            <p>
+              التصنيفات
+              <ul>
+                <li>أجهزة الشيشة</li>
+                <li>الإكسسوارات</li>
+                <li>التانكات</li>
+                <li>التبغ المعدّ للتسخي</li>
+                <li>النكهات</li>
+              </ul>
+            </p>
+          </div>
+          <div className="category_list">
+            {loading ? (
+              <p className="category_loading">Vape App...</p>
+            ) : (
+              allProductsByCategory.map((item) => {
+                return (
+                  <div className="category_item" key={item._id}>
+                    <Link href={`/${lang}/details/${item._id}`}>
+                      <Image
+                        src={item.images[0]}
+                        width={1000}
+                        height={1000}
+                        alt="category product"
+                      />
+                    </Link>
+                    <div className="category_content">
+                      <span>النكهات سولت نيكوتين</span>
+                      <h3>{item.name}</h3>
+                      <div className="category_content_info">
+                        <p>{item.price} ريال</p>
+                        <button onClick={() => addToCart(item._id)}>
+                          اضف الي السلة
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })
-          )}
+                );
+              })
+            )}
+          </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
