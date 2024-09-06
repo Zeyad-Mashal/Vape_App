@@ -193,6 +193,9 @@ const Navbar = () => {
           {logOut ? (
             <div className="logout_dropmenu">
               <p>هل تريد تسجيل خروج ؟</p>
+              <button>
+                <Link href={`/${lang}/profile`}>بيانات الحساب</Link>
+              </button>
               <button onClick={removeToken}>تسجيل خروج</button>
             </div>
           ) : (
@@ -330,6 +333,7 @@ const Navbar = () => {
               <div className="logout_dropmenu">
                 <p>هل تريد تسجيل خروج ؟</p>
                 <button onClick={removeToken}>تسجيل خروج</button>
+                <button>بيانات الحساب</button>
               </div>
             ) : (
               ""

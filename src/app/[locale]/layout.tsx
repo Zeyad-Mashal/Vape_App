@@ -7,8 +7,8 @@ import { getMessages } from "next-intl/server";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Suwlif Tea",
-  description: "Suwlif Tea Made By Zeyad Mashaal",
+  title: "Vape App",
+  description: "Vape App Made By Zeyad Mashaal",
 }
 
 
@@ -19,8 +19,8 @@ type Props = {
   }
 }
 
- 
-export default async function RootLayout({ children, params:{locale} }: Props) {
+
+export default async function RootLayout({ children, params: { locale } }: Props) {
   const messages = await getMessages();
   return (
     <html lang={locale}>
