@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import BootStrap from "../../components/BootStrap";
 import { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import styles from "./styles.module.css"
+// import styles from "./styles.module.css"
 import { getMessages } from "next-intl/server";
 
 export const metadata: Metadata = {
@@ -26,7 +26,8 @@ export default async function RootLayout({ children, params: { locale } }: Props
   return (
     <html lang={locale}>
       <NextIntlClientProvider messages={messages} locale={locale}>
-        <body className={locale === "ar" ? styles.arbic : styles.english}>
+        {/* className={locale === "ar" ? styles.arbic : styles.english} */}
+        <body >
           {children}
           <BootStrap />
         </body>
