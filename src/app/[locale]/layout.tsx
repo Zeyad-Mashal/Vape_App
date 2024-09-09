@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css"
 import BootStrap from "../../components/BootStrap";
@@ -6,7 +6,6 @@ import { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import styles from "./styles.module.css"
 import { getMessages } from "next-intl/server";
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Vape App",
