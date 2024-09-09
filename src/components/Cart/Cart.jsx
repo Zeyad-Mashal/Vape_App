@@ -104,11 +104,15 @@ const Cart = () => {
               })
             )}
           </div>
-          <div className="cart_Check">
-            <button>
-              <Link href={`/${lang}/order`}>{t("check")}</Link>
-            </button>
-          </div>
+          {allCart.length >= 1 ? (
+            <div className="cart_Check">
+              <button>
+                <Link href={`/${lang}/order`}>{t("check")}</Link>
+              </button>
+            </div>
+          ) : (
+            <h3>السلة فارغة</h3>
+          )}
         </div>
       </section>
     </>

@@ -119,6 +119,8 @@
   color: #fff;
   transition: 0.3s ease;
   border: none;
+  list-style: none;
+  text-decoration: none;
 }
 .imp_links ul li a:hover {
   border: 1px solid goldenrod;

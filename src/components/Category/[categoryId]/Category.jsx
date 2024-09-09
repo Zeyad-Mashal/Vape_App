@@ -49,16 +49,23 @@ const Category = () => {
         <h1>{allProductsByCategory[0]?.category}</h1>
         <div className="category_container">
           <div className="filter_container">
-            <p>
-              التصنيفات
-              <ul>
-                <li>أجهزة الشيشة</li>
-                <li>الإكسسوارات</li>
-                <li>التانكات</li>
-                <li>التبغ المعدّ للتسخي</li>
-                <li>النكهات</li>
-              </ul>
+            <p class="d-inline-flex gap-1">
+              <a
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Filter
+              </a>
             </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component.
+              </div>
+            </div>
           </div>
           <div className="category_list">
             {loading ? (

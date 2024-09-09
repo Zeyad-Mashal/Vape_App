@@ -108,7 +108,7 @@ const Section1 = () => {
         </div>
       </div>
 
-      <div>
+      <div className="section1_banner">
         <Image
           src="/images/5.jpg"
           width={1500}

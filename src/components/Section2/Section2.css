@@ -84,13 +84,16 @@
   width: 180px;
   margin: 10px;
 }
-
 .section2_item .cart_btn:active {
   background-color: #555;
   transform: scale(0.95);
 }
 .section2_item .cart_btn button {
   font-weight: bold;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
 }
 .section2 .swiper {
   height: 450px;

@@ -152,7 +152,7 @@ const Details = () => {
                 <div className="qunatity_container">
                   <div className="quantity">
                     <button onClick={decrementCount}>-</button>
-                    <span>{count}</span>
+                    <span className="details_count">{count}</span>
                     <button onClick={incrementCount}>+</button>
                   </div>
                 </div>

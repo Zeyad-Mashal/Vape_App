@@ -18,6 +18,10 @@ const Profile = () => {
         <div className="profile_container">
           <div className="profile_list">
             <div className="profile_item">
+              <FontAwesomeIcon icon={faUser} />
+              <p>الحساب</p>
+            </div>
+            <div className="profile_item">
               <FontAwesomeIcon icon={faCartShopping} />
               <p>الطلبات</p>
             </div>
@@ -25,22 +29,10 @@ const Profile = () => {
               <FontAwesomeIcon icon={faLocationDot} />
               <p>العنوان</p>
             </div>
-            <div className="profile_item">
-              <FontAwesomeIcon icon={faUser} />
-              <p>الحساب</p>
-            </div>
 
             <div className="profile_item">
               <FontAwesomeIcon icon={faHeart} />
               <p>قائمة المفضلة</p>
-            </div>
-            <div className="profile_item">
-              <FontAwesomeIcon icon={faArrowRightFromBracket} />
-              <p>تسجيل الخروج</p>
-            </div>
-            <div className="profile_item">
-              <FontAwesomeIcon icon={faArrowRightFromBracket} />
-              <p>تسجيل الخروج</p>
             </div>
           </div>
         </div>

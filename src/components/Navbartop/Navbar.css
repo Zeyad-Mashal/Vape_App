@@ -5,6 +5,9 @@
 .d-flex {
   display: flex;
 }
+a {
+  text-decoration: none;
+}
 .navbar_top {
   display: flex;
   justify-content: space-between;
@@ -44,17 +47,7 @@
 }
 .navbar_top .nav_icons svg {
   font-size: 1.5rem;
-}
-.navbar_top .nav_icons .cart_count {
-  background-color: red;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  margin: -40px -10px 0 0;
+  color: #fff;
 }
 .navbar_top .nav_icons .profile_count {
   position: absolute;
@@ -110,6 +103,7 @@
   padding: 10px;
   cursor: pointer;
   transition: 0.3s ease;
+  color: #000;
 }
 .search_item:hover {
   background-color: #eee;
@@ -237,6 +231,10 @@
   width: 100%;
   transition: 0.3s ease;
   padding: 10px 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
 }
 .translation_options button:hover {
   background-color: goldenrod;
@@ -294,6 +292,8 @@
   width: 100%;
   transition: 0.3s ease;
   padding: 10px 0;
+  border: none;
+  outline: none;
 }
 .mobile_translation button:hover {
   background-color: goldenrod;
@@ -324,10 +324,17 @@
 }
 .logout_dropmenu button {
   padding: 7px 10px;
-  background-color: goldenrod;
   width: 100%;
   border-radius: 10px;
   transition: 0.3s;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+.logout_dropmenu button a {
+  text-decoration: none;
+  color: #fff;
 }
 .logout_dropmenu button:hover {
   background-color: #000;
